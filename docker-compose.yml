@@ -20,6 +20,13 @@ services:
       # Where our data will be persisted
     volumes:
       - my-db:/var/lib/mysql
+  app:
+    image: bookmarker
+    ports:
+      - '9090:80'
+    depends_on:
+      - db  
+
 # Names our volume
 volumes:
   my-db:
