@@ -20,6 +20,7 @@ switch ($page) {
     default:
         $page = 'main';
         break;    
+    }
 
 ?>
 
